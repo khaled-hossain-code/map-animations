@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react"
+import React, { useLayoutEffect } from "react"
 import "./App.css"
 import * as am4core from "@amcharts/amcharts4/core"
 import * as am4maps from "@amcharts/amcharts4/maps"
@@ -132,10 +132,10 @@ function App(props) {
       // Set up animation
       var from, to
       var numLines = lineSeries.mapLines.length
-      if (direction == 1) {
+      if (direction === 1) {
         from = 0
         to = 1
-        if (planeImage.rotation != 0) {
+        if (planeImage.rotation !== 0) {
           planeImage
             .animate({ to: 0, property: "rotation" }, 1000)
             .events.on("animationended", flyPlane)
@@ -144,7 +144,7 @@ function App(props) {
       } else {
         from = 1
         to = 0
-        if (planeImage.rotation != 180) {
+        if (planeImage.rotation !== 180) {
           planeImage
             .animate({ to: 180, property: "rotation" }, 1000)
             .events.on("animationended", flyPlane)
