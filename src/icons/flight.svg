@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="flight" transform="translate(-980 -231)">
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(982 233)" fill="#e2e8f1" stroke="#fff" stroke-width="2">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="13" fill="none"/>
+    </g>
+    <path id="Icon_ionic-md-airplane" data-name="Icon ionic-md-airplane" d="M15.577,11.683V10.529l-4.615-3V4.275a.923.923,0,0,0-1.846,0V7.529l-4.615,3v1.154L9.115,10.3v3.277l-1.385.9v.9l2.308-.462,2.308.462v-.9l-1.385-.9V10.3Z" transform="translate(993.069 231.272) rotate(45)" fill="#4b73a7"/>
+  </g>
+</svg>
