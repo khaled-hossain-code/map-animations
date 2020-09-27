@@ -28,6 +28,22 @@ function App(props) {
     polygonSeries.mapPolygons.template.nonScalingStroke = true
     polygonSeries.exclude = ["AQ"]
 
+    // // Configure series
+    // var polygonTemplate = polygonSeries.mapPolygons.template
+    // polygonTemplate.tooltipHTML =
+    //   '<b>{name}</b><br><a href="https://en.wikipedia.org/wiki/{name.urlEncode()}">More info</a>'
+    // polygonTemplate.fill = am4core.color("#74B266")
+
+    // // Set up tooltips
+    // polygonSeries.calculateVisualCenter = true
+    // polygonTemplate.tooltipPosition = "fixed"
+    // polygonSeries.tooltip.label.interactionsEnabled = true
+    // polygonSeries.tooltip.keepTargetHover = true
+
+    // // Create hover state and set alternative fill color
+    // var hs = polygonTemplate.states.create("hover")
+    // hs.properties.fill = am4core.color("#367B25")
+
     // Add markers
     var cities = chart.series.push(new am4maps.MapImageSeries())
 
@@ -38,6 +54,8 @@ function App(props) {
     marker.height = 28
     marker.nonScaling = true
     marker.tooltipText = "{title}"
+    marker.tooltipHTML =
+      "<b>{title}</b><br>lat: {latitude} <br> lon: {longitude}"
     marker.horizontalCenter = "middle"
     marker.verticalCenter = "middle"
     marker.propertyFields.href = "flag"
